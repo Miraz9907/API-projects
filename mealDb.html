@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yummy Yummy Dummy</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+</head>
+<body>
+    <header>
+
+    </header>
+    <main>
+        <!-- search container  -->
+        <section style="height: 120px;" class="d-flex justify-content-center align-items-center">
+            <div>
+                <input id="search-field" type="text" class="px-2" placeholder="search">
+                <button onclick="searchMeals()" class="btn btn-primary">Search</button>
+            </div>
+        </section>
+        <!-- meals container  -->
+        <section>
+            <div id="meals-container" class="row row-cols-1 row-cols-md-3 g-4">
+               
+              </div>
+        </section>
+
+        <div class="modal fade" id="mealDetails" tabindex="-1" aria-labelledby="mealDetailsLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="mealDetailsLabel"></h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div id="mealDetailsBody" class="modal-body">
+                  
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+    </main>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="js/mealDb.js"></script>
+</body>
+</html>
